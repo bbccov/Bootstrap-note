@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>标签页-Bootsrap 3.3.0</title>
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	<script src="dist/js/holder.min.js"></script>
+	<style>
+		body{
+			padding-top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<button class="btn btn-primary">tooltip</button>
+	</div>
+</body>
+<script>
+	$('button').tooltip({
+		"title":'123211312',
+		"placement":"bottom",
+		"trigger":"click",
+	});
+</script>
+</html>

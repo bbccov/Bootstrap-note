@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两端对齐按钮组和下拉菜单-Bootsrap 3.3.0</title>
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	<script src="dist/js/holder.min.js"></script>
+	<style>
+	.container{
+		/*background: #eee;*/
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p>两端对齐按钮组和下拉菜单</p>
+		<!-- 只能使用a标签按钮组 -->
+		<div class="btn-group btn-group-justified">
+			<a class="btn btn-primary">1</a>
+			<a class="btn btn-danger">2</a>
+			<a class="btn btn-info">3</a>
+			<div class="btn-group">
+				<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					下拉菜单
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu pull-right">
+					<li class="dropdown-header">mysql</li>
+					<li>
+						<a href="">something else</a>
+					</li>
+					<li>
+						<a href="">something</a>
+					</li>
+					<li>
+						<a href="">else</a>
+					</li>
+					<li class="divider"></li>
+					<li class="dropdown-header">php</li>
+					<li>
+						<a href="">something else</a>
+					</li>
+					<li>
+						<a href="">something else</a>
+					</li>
+					<li>
+						<a href="">something else</a>
+					</li>
+				</ul>
+			</div>		
+		</div>
+	</div>
+</body>
+</html>

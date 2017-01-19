@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉菜单-Bootsrap 3.3.0</title>
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	<script src="dist/js/holder.min.js"></script>
+	<style></style>
+</head>
+<body>
+	<div class="container">
+		<p>下拉菜单</p>
+		<div class="dropdown">
+			<a  class="btn btn-default" id="dLabel">
+				Dropdown <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+
+			</ul>
+		</div>	
+	</div>
+</body>
+<script>
+	$('#dLabel').click(
+		function () {
+			if ($('.dropdown-menu')[0].hidden == false) {
+				$('.dropdown-menu').show();
+				$('.dropdown-menu')[0].hidden=true;
+			}else{
+				$('.dropdown-menu').hide();
+				$('.dropdown-menu')[0].hidden=false;
+			}			
+		}
+	);
+</script>
+</html>

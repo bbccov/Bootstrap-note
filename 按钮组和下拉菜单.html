@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>按钮组和下拉菜单-Bootsrap 3.3.0</title>
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	<script src="dist/js/holder.min.js"></script>
+	<style>
+	.container{
+		/*background: #eee;*/
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p>按钮组和下拉菜单</p>
+		<div class="btn-group">
+			<button class="btn btn-primary">1</button>
+			<button class="btn btn-primary">2</button>
+			<button class="btn btn-primary">3</button>
+			<div class="btn-group">
+				<button class="btn btn-primary" data-toggle="dropdown">
+					下拉菜单
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li class="dropdown-header">mysql</li>
+					<li>
+						<a href="">something else</a>
+					</li>
+					<li>
+						<a href="">something</a>
+					</li>
+					<li>
+						<a href="">else</a>
+					</li>
+					<li class="divider"></li>
+					<li class="dropdown-header">php</li>
+					<li>
+						<a href="">something else</a>
+					</li>
+					<li>
+						<a href="">something else</a>
+					</li>
+					<li>
+						<a href="">something else</a>
+					</li>
+				</ul>
+			</div>		
+		</div>
+	</div>
+</body>
+</html>
